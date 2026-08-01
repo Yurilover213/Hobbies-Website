@@ -1,0 +1,206 @@
+
+
+
+@keyframes border-change {
+    from {
+        background-position: 0 0, 0% 0;
+    }
+
+    to {
+        background-position: 0 0, 200% 0;
+    }
+}
+
+.header h1{
+    text-align:center;
+    font-size:40px;
+    margin-top: 10px
+
+}
+
+.header p{
+    background-color: lightgrey;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+hr{
+    border: 3px solid brown;
+}
+
+
+
+.summary-table  th, td{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    width: 50%
+}
+
+.summary-table tr{
+    border: 1px solid brown
+    
+}
+
+.summary-head{
+    border: 3px solid brown;
+    background-color: brown;
+    color:white
+}
+
+h2{ 
+    margin-bottom:0px;
+    margin-top:30px;
+    width:30%
+}
+
+
+.books{
+    border:1px solid brown;
+    padding:1em;
+    margin-bottom: 10px;
+    padding-bottom: 50px
+
+}
+
+.books .reveal-btn, img, .reveal-btn1{
+    width:20px;
+    height:20px;
+    float: right;
+
+}
+
+
+
+.more-info li{
+    display: inline-block;
+    padding: 2px;
+    margin: 5px;
+}
+
+.more-info{
+    padding: 0px
+}
+
+.date{
+    float:right;
+    font-size: 12px
+    
+}
+
+.books h3{
+    text-decoration: underline;
+
+}
+
+.by-line li{
+    display: inline-block;
+}
+
+.by-line .author{
+    text-decoration: underline;
+}
+
+.by-line{
+    padding:0px
+}
+
+.tags li{
+    display:inline-block;
+    text-decoration-style:dotted;
+    text-decoration-line:underline;
+    margin: 2px;
+    color:brown
+}
+
+.tags li:hover{
+    color:grey;
+    font-style: italic;
+    
+
+}
+
+.tags{
+    padding:0px
+}
+
+.dropdown img{
+    float:left;
+    width:15%;
+    height:15%;
+    margin-right:10px
+
+}
+
+.dropdown ul li{
+    list-style-type: none;
+    margin-left:5px;
+    margin-bottom:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.dropdown{
+    display:none;
+    margin-top:10px
+}
+
+.more-info{
+    margin-bottom:0px
+}
+
+/* .reveal-btn{ */
+    
+   
+
+.search{
+    margin:5px;
+    border-radius: 30px;
+    border:1px brown solid;
+    padding:10px;
+    width:100%;
+
+}
+
+.search:hover{
+    border: 2px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, blue, violet,  pink, blue) border-box;
+
+    background-size: 100% 100%, 200% 100%;
+    animation: border-change 2.5s linear infinite;
+}
+
+
+/* no results msg */
+
+.no-results{
+    display: none;
+    text-align: center;
+    width:100%;
+    margin-top:20px
+
+}
+
+.no{
+     display: none;
+    text-align: center;
+    width:100%;
+    margin-top:20px
+
+
+}
+
+.archive-section{
+    overflow: auto;
+    height: 600px
+}
+
+.fanart{
+    
+}
+
+

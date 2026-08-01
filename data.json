@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Miss Forensics",
+    "link": "https://example.com/miss-forensics",
+    "synopsis": "A forensic investigator solves mysterious criminal cases.",
+    "genre": ["Mystery", "Crime", "Drama"]
+  },
+  {
+    "title": "Tamen De Gushi",
+    "link": "https://example.com/tamen-de-gushi",
+    "synopsis": "A light-hearted romance about two schoolgirls.",
+    "genre": ["Romance", "Comedy", "School Life"]
+  }
+]

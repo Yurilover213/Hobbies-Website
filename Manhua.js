@@ -1,5 +1,5 @@
 function toggleContent(button) {
-    var container = button.closest(".Manhua");
+    var container = button.closest(".books");
     var node = container.querySelector(".dropdown");
 
     if (node.style.display === "none" || node.style.display === "") {
@@ -11,26 +11,69 @@ function toggleContent(button) {
     }
 }
 
+function searchContent() {
+    const input = document
+        .getElementById("search")
+        .value
+        .toLowerCase()
+        .trim();
 
-function toggleContent1() {
-    var node = document.querySelector(".dropdown1");
-    var btn = document.querySelector(".reveal-btn1")
+    const books = document.querySelectorAll(".book-title");
+    const noResults = document.querySelector('.no-results');
+
+    let titles = 0
+
+    books.forEach(function (bookTitle) {
+        const title = bookTitle.textContent.toLowerCase();
+        const bookContainer = bookTitle.closest(".books");
+        
+
+     ;
+
+        if (title.includes(input)) {
+            titles ++;
+            bookContainer.style.display = "block";
+        } else {
+            bookContainer.style.display = "none";
+        }
+
+    if (titles === 0){
+        noResults.style.display = "block"
+        }
+    else{
+        noResults.style.display = "none"
+
+    }
+    });
+}
+
+function currentPage(){
+    const location = window.location.href; 
+    const links = document.querySelectorAll(".nav-link")
+
+    links.forEach(function(link) {
+        if (link.href === location){
+            link.style.backgroundColor = "rgb(104, 34, 34)"
+        }
     
 
-    if (node.style.display === "none") {
-        node.style.display = "block";
-        btn.style.transform = "rotate(180deg)"
-        
-
-    }
-
-    else {
-        node.style.display = "none";
-        btn.style.transform = "rotate(360deg)"
-        
-        
-    }
-
+    })
+    
 }
+
+window.addEventListener("DOMContentLoaded", currentPage);
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
 
 
