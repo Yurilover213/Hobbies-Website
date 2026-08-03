@@ -1,4 +1,5 @@
 function generateRead() {
+    
     const allBooks = {
         "Miss Forensics": "Images/miss-forensics-1.webp",
         "Tamen De Gushi": "Images/tamende gushi.jpg"
