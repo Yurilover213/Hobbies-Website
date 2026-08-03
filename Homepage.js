@@ -1,77 +1,61 @@
-function generateRead(button){
+function generateRead() {
+    const allBooks = {
+        "Miss Forensics": "Images/miss-forensics-1.webp",
+        "Tamen De Gushi": "Images/tamende gushi.jpg"
+    };
+
     const book = document.querySelector(".book-generated");
-    // const bookpage = book.getAttribute("src");
-const bookContainer = document.querySelector("#book-container");
+    const card = document.querySelector(".card-bg");
 
-async function fetchBooks() {
-    try {
-        const response = await fetch("./data.json");
-
-        if (!response.ok) {
-            throw new Error(`Failed to load books: ${response.status}`);
-        }
-
-        const books = await response.json();
-
-        displayBooks(books);
-    } catch (error) {
-        console.error(error);
-
-        bookContainer.innerHTML = `
-            <p>Sorry, the books could not be loaded.</p>
-        `;
+    if (!book) {
+        console.error("Could not find .book-generated");
+        return;
     }
-}
 
-fetchBooks();
-
-    const bookValues = Object.values(allBooks);
-    const bookKeys = Object.keys(allBooks);
-    const randomIndex = Math.floor(Math.random() * bookValues.length);
-    const randomBookCover = bookValues[randomIndex];
-    const randomBookTitle = bookKeys[randomIndex] ;
-    const card = document.querySelector(".card-bg")
+    const bookTitles = Object.keys(allBooks);
+    const randomIndex = Math.floor(Math.random() * bookTitles.length);
+    const randomBookTitle = bookTitles[randomIndex];
+    const randomBookCover = allBooks[randomBookTitle];
 
     book.src = randomBookCover;
-    book.classList.add("generated");
+    book.alt = randomBookTitle;
 
-
+    // Restart the animation
     book.classList.remove("generated");
     void book.offsetWidth;
-    book.classList.toggle('generated');
-    book.classList.remove("enhanced");
-    card.style.display = 'none'
-    
+    book.classList.add("generated");
 
+    // Optional: display the title inside the card
+    if (card) {
+        const title = card.querySelector("h2");
+
+        if (title) {
+            title.textContent = randomBookTitle;
+        }
+    }
 }
     
-function enhance(){
 
-     const book = document.querySelector(".book-generated")
-     const card = document.querySelector(".card-bg")
+function enhance() {
+    const book = document.querySelector(".book-generated");
+    const card = document.querySelector(".card-bg");
 
-    if (!book) return; 
-    book.classList.toggle("enhanced");
-    book.classList.remove("generated");
-    
-    if (card.style.display == 'none'){
-        card.style.display = 'block'
+    if (!book || !card) return;
+
+    const isOpen = book.classList.contains("enhanced");
+
+    if (isOpen) {
+        // Close both
+        book.classList.remove("enhanced");
+        card.style.display = "none";
+    } else {
+        // Show both at the same time
+        book.classList.remove("generated");
+        book.classList.add("enhanced");
+        card.style.display = "block";
     }
-    
-    else{
-        card.style.display = 'none'
-
-    }
-    
-  
-
- 
-    
-    
 }
 
 
 
-    
-    
 
