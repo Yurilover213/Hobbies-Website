@@ -26,6 +26,8 @@ function generateRead() {
     void book.offsetWidth;
     book.classList.add("generated");
 
+    book.style.display = "block" // Show the book image
+
     // Optional: display the title inside the card
     if (card) {
         const title = card.querySelector("h2");
