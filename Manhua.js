@@ -65,7 +65,27 @@ window.addEventListener("DOMContentLoaded", currentPage);
 
 
 
+function filterTag(tag) {
+    const books = document.querySelectorAll(".books");
 
+    books.forEach(function(book) {
+        const bookTags = book.querySelector(".tags").textContent;
+
+        if (bookTags.includes(tag)) {
+            book.style.display = "block";
+        } else {
+            book.style.display = "none";
+        }
+    });
+}
+
+function showAll() {
+    const books = document.querySelectorAll(".books");
+
+    books.forEach(function(book) {
+        book.style.display = "block";
+    });
+}
 
     
     
