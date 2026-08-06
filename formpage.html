@@ -1,0 +1,50 @@
+<div class="container mt-4">
+    <h2 id="displayBookTitle"></h2>
+
+    <p id="displayGenres"></p>
+    <p id="displayRating"></p>
+    <p id="displayTotalChapters"></p>
+    <p id="displayChaptersRead"></p>
+
+    <h4>Synopsis</h4>
+    <p id="displaySynopsis"></p>
+
+    <h4>Review</h4>
+    <p id="displayReview"></p>
+</div>
+
+<script>
+    // Get the information from the URL
+    const formData = new URLSearchParams(window.location.search);
+
+    // Get each form value
+    const bookTitle = formData.get("bookTitle");
+    const genres = formData.getAll("genres");
+    const rating = formData.get("rating");
+    const totalChapters = formData.get("totalChapters");
+    const chaptersRead = formData.get("chaptersRead");
+    const synopsis = formData.get("synopsis");
+    const review = formData.get("review");
+
+    // Write the information onto the page
+    document.querySelector("#displayBookTitle").textContent =
+        bookTitle || "No book title entered";
+
+    document.querySelector("#displayGenres").textContent =
+        "Genres: " + (genres.length > 0 ? genres.join(", ") : "None selected");
+
+    document.querySelector("#displayRating").textContent =
+        "Rating: " + (rating ? rating + "/5" : "Not rated");
+
+    document.querySelector("#displayTotalChapters").textContent =
+        "Total Chapters: " + (totalChapters || "Not entered");
+
+    document.querySelector("#displayChaptersRead").textContent =
+        "Chapters Read: " + (chaptersRead || "Not entered");
+
+    document.querySelector("#displaySynopsis").textContent =
+        synopsis || "No synopsis entered";
+
+    document.querySelector("#displayReview").textContent =
+        review || "No review entered";
+</script>
