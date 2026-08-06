@@ -69,7 +69,7 @@ h2{
     width:20px;
     height:20px;
     float: right;
-
+    cursor: pointer;
 }
 
 
@@ -112,7 +112,8 @@ h2{
     text-decoration-style:dotted;
     text-decoration-line:underline;
     margin: 2px;
-    color:brown
+    color:brown;
+    cursor: pointer;
 }
 
 .tags li:hover{
@@ -131,7 +132,7 @@ h2{
     width: 150px;
     max-width: 100%;
     height: auto;
-    margin-right: 10px;
+    margin-right: 10px
 }
 
 .dropdown ul li{

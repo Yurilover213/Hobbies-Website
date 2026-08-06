@@ -77,6 +77,8 @@
         <h2>Recently Read</h2>
           <input type="text" placeholder="Search for book" id="search" class="search" onkeyup="searchContent()">
         <hr>
+        <button onclick="showAll()" class="filter-reset">Show All</button>
+        <hr>
 <div class="archive-section">
       <div class="books" id="books">
         <p class="date">16 July 2026</p>
@@ -85,10 +87,10 @@
           <li class="author">Anonymous</li>
         </ul>
         <ul class="tags">
-          <li>Forensics</li>
-          <li>Mystery</li>
-          <li>Enemies-To-Lovers</li>
-          <li>Thriller</li>
+          <li onclick="filterTag('Forensics')">Forensics</li>
+          <li onclick="filterTag('Mystery')">Mystery</li>
+          <li onclick="filterTag('Enemies-To-Lovers')">Enemies-To-Lovers</li>
+          <li onclick="filterTag('Thriller')">Thriller</li>
         </ul>
         <br>
         <p class="description">
@@ -119,7 +121,7 @@
             <li><b>Finished:</b> Still reading </li>
             <li><b>Chapters Read:</b> 35/144</li>
           </ul>
-          <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)">  </img>
+          <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)" >  </img>
        
        
   </div>
@@ -131,10 +133,9 @@
           <li class="author">Anonymous</li>
         </ul>
         <ul class="tags">
-          <li>Slice-of-Life</li>
-          <li>Supernatural</li>
-          <li>Romance</li>
-          <li>Fluff</li>
+          <li onclick="filterTag('Slice-Of-Life')">Slice-Of-Life</li>
+          <li onclick="filterTag('Supernatural')">Supernatural</li>
+          <li onclick="filterTag('Fluff')">Fluff</li>
         </ul>
         <br>
         <p class="description">
