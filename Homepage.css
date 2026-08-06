@@ -101,17 +101,21 @@
     width:50%;
     position:relative;
     margin-top: 100px;
-    top: 140%;
     border-radius:10px;
-    padding-bottom: 100px
+    padding-bottom: 100px;
 
 }
 
+.generator{
+    position:relative;
+
+}
 
 
 .book-generator h2{
     margin-left:160px;
     margin-top: 10px
+
     
 }
 

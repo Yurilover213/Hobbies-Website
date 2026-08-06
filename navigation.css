@@ -41,7 +41,7 @@
 body{
     margin-left:1em;
     margin-right:1em;
-    min-width: 990px;
+
     
 }
 
@@ -76,8 +76,8 @@ hr{
 
 .solid_1{
     position: relative;            
-    height: 750px;             
-    overflow: hidden;  
+    max-height: 750px;             
+
 }
 
 
