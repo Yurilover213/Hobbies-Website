@@ -3,28 +3,33 @@ async function generateRead() {
     const book = document.querySelector(".book-generated");
     const card = document.querySelector(".card-bg");
 
-    if (!book) {
-        console.error("Could not find .book-generated");
-        return;
+    let books = [
+    {
+        "title": "Miss Forensics",
+        "image": "Images/miss-forensics-1.webp",
+        "synopsis": "A forensic-themed story.",
+        "type": "Manhua",
+        "tags": ["Mystery", "Drama", "Thriller"]
+    },
+    {
+        "title": "Tamen De Gushi",
+        "image": "Images/tamende gushi.jpg",
+        "synopsis": "A story of the daily life of a pair of highschool students",
+        "type": "Manhua",
+        "tags": ["Romance", "Comedy"]
+    },
+        {
+        "title": "My Food Looks Very Cute",
+        "image": "Images/My food looks very cute today.webp",
+        "synopsis": "A story of found friendship and mythical beings ",
+        "type": "Manhua",
+        "tags": ["Slice-Of-Life", "Supernatural", "Fluff"]
     }
+]
 
-    try {
 
-        // Fetch data.json
-        const response = await fetch("./data.json");
 
-        if (!response.ok) {
-            throw new Error("Could not load data.json");
-        }
-
-        const books = await response.json();
-
-        // Check whether books actually exist
-        if (books.length === 0) {
-            console.error("No books found in data.json");
-            return;
-        }
-
+   
         // Pick random book
         const randomIndex = Math.floor(Math.random() * books.length);
 
@@ -93,12 +98,6 @@ async function generateRead() {
 
     }
 
-    catch (error) {
-
-        console.error("Error loading books:", error);
-
-    }
-}
 
 function enhance() {
     const book = document.querySelector(".book-generated");
@@ -119,7 +118,5 @@ function enhance() {
         card.style.display = "block";
     }
 }
-
-
 
 
