@@ -66,7 +66,10 @@ window.addEventListener("DOMContentLoaded", currentPage);
 
 
 function filterTag(tag) {
+    let tag = document.querySelectorAll()
     const books = document.querySelectorAll(".books");
+    const title = document.querySelector(".category-shown")
+
 
     books.forEach(function(book) {
         const bookTags = book.querySelector(".tags").textContent;
@@ -77,15 +80,20 @@ function filterTag(tag) {
             book.style.display = "none";
         }
     });
+     title.textContent = tag
 }
 
 function showAll() {
     const books = document.querySelectorAll(".books");
+    const title = document.querySelector(".category-shown")
 
     books.forEach(function(book) {
         book.style.display = "block";
     });
+
+    title.textContent = "Recently Read"
 }
+
 
     
     

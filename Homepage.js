@@ -1,9 +1,4 @@
-function generateRead() {
-    
-    const allBooks = {
-        "Miss Forensics": "Images/miss-forensics-1.webp",
-        "Tamen De Gushi": "Images/tamende gushi.jpg"
-    };
+async function generateRead() {
 
     const book = document.querySelector(".book-generated");
     const card = document.querySelector(".card-bg");
@@ -13,31 +8,97 @@ function generateRead() {
         return;
     }
 
-    const bookTitles = Object.keys(allBooks);
-    const randomIndex = Math.floor(Math.random() * bookTitles.length);
-    const randomBookTitle = bookTitles[randomIndex];
-    const randomBookCover = allBooks[randomBookTitle];
+    try {
 
-    book.src = randomBookCover;
-    book.alt = randomBookTitle;
+        // Fetch data.json
+        const response = await fetch("./data.json");
 
-    // Restart the animation
-    book.classList.remove("generated");
-    void book.offsetWidth;
-    book.classList.add("generated");
-
-    book.style.display = "block" // Show the book image
-
-    // Optional: display the title inside the card
-    if (card) {
-        const title = card.querySelector("h2");
-
-        if (title) {
-            title.textContent = randomBookTitle;
+        if (!response.ok) {
+            throw new Error("Could not load data.json");
         }
+
+        const books = await response.json();
+
+        // Check whether books actually exist
+        if (books.length === 0) {
+            console.error("No books found in data.json");
+            return;
+        }
+
+        // Pick random book
+        const randomIndex = Math.floor(Math.random() * books.length);
+
+        const randomBook = books[randomIndex];
+
+        // Change book cover
+        book.src = randomBook.image;
+        book.alt = randomBook.title;
+
+        // Restart animation
+        book.classList.remove("generated");
+        book.classList.remove("enhanced");
+
+        void book.offsetWidth;
+
+        book.classList.add("generated");
+
+        book.style.display = "block";
+
+        // Update card information\
+        const colour = ["lightsteelblue", "lightblue", "lightgreen"]
+        
+      
+        if (card) {
+
+            const title = card.querySelector("h2");
+            const synopsis = card.querySelector(".synopsis");
+            const type = card.querySelector(".type");
+            const tags = card.querySelector(".tags");
+
+            if (title) {
+                title.textContent = randomBook.title;
+            }
+
+            if (synopsis) {
+                synopsis.innerHTML = "<b>" + "Synopsis: " + "</b>" + randomBook.synopsis
+            }
+
+            if (type) {
+                type.innerHTML = "<b>" + "Type: " + "</b>" + randomBook.type
+               
+            }
+
+            if (tags) {
+
+                tags.innerHTML = "";
+
+                randomBook.tags.forEach(function(tag) {
+
+                    const li = document.createElement("li");
+                    const randomColor = Math.floor(Math.random() * colour.length);
+
+                    li.style.backgroundColor = colour[randomColor];
+                    li.style.borderColor = colour[randomColor]
+                    li.textContent = tag;
+
+                    tags.appendChild(li);
+
+                    
+
+                });
+            }
+
+            card.style.display = "none";
+        }
+
+    }
+
+    catch (error) {
+
+        console.error("Error loading books:", error);
+
     }
 }
-    
 
 function enhance() {
     const book = document.querySelector(".book-generated");

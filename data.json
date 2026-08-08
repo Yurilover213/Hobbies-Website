@@ -1,14 +1,23 @@
 [
-  {
-    "title": "Miss Forensics",
-    "link": "https://example.com/miss-forensics",
-    "synopsis": "A forensic investigator solves mysterious criminal cases.",
-    "genre": ["Mystery", "Crime", "Drama"]
-  },
-  {
-    "title": "Tamen De Gushi",
-    "link": "https://example.com/tamen-de-gushi",
-    "synopsis": "A light-hearted romance about two schoolgirls.",
-    "genre": ["Romance", "Comedy", "School Life"]
-  }
+    {
+        "title": "Miss Forensics",
+        "image": "Images/miss-forensics-1.webp",
+        "synopsis": "A forensic-themed story.",
+        "type": "Manhua",
+        "tags": ["Mystery", "Drama", "Thriller"]
+    },
+    {
+        "title": "Tamen De Gushi",
+        "image": "Images/tamende gushi.jpg",
+        "synopsis": "A story of the daily life of a pair of highschool students",
+        "type": "Manhua",
+        "tags": ["Romance", "Comedy"]
+    },
+        {
+        "title": "My Food Looks Very Cute",
+        "image": "Images/My food looks very cute today.webp",
+        "synopsis": "A story of found friendship and mythical beings ",
+        "type": "Manhua",
+        "tags": ["Slice-Of-Life", "Supernatural", "Fluff"]
+    }
 ]

@@ -74,7 +74,7 @@
       </table>
     </div>
  
-        <h2>Recently Read</h2>
+        <h2 class="category-shown">Recently Read</h2>
           <input type="text" placeholder="Search for book" id="search" class="search" onkeyup="searchContent()">
         <hr>
         <button onclick="showAll()" class="filter-reset">Show All</button>
@@ -87,9 +87,8 @@
           <li class="author">Anonymous</li>
         </ul>
         <ul class="tags">
-          <li onclick="filterTag('Forensics')">Forensics</li>
+          <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('Mystery')">Mystery</li>
-          <li onclick="filterTag('Enemies-To-Lovers')">Enemies-To-Lovers</li>
           <li onclick="filterTag('Thriller')">Thriller</li>
         </ul>
         <br>
@@ -167,6 +166,51 @@
             <li><b>Chapters Read:</b> 228/228 </li>
           </ul>
           <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)">  </img>
+       
+       
+  </div>
+
+   <div class="books" id="books">
+        <p class="date">2 January 2026</p>
+        <h3 class="book-title">My food looks very cute!【我的食物看起来很可爱】</h3>
+        <ul class="by-line"> 
+          <li class="author">Anonymous</li>
+        </ul>
+        <ul class="tags">
+          <li onclick="filterTag('Slice-Of-Life')">Slice-Of-Life</li>
+          <li onclick="filterTag('Supernatural')">Supernatural</li>
+          <li onclick="filterTag('Fluff')">Fluff</li>
+        </ul>
+        <br>
+        <p class="description">
+          <b>Review:</b><i> I love this manhua so much. The characters have such good chemistry with one another!
+            Their little antics always never fail to make me laugh and whenever I have a bad day this comic would helps 
+            brughten me up just a little. The art style is also so fun and bright whch helps convey the lightheartedness
+            of this comic. The only gripe I have with it is that the story is a tad bit too long and I wish it concluded
+            a bit earlier on in the story. Overall this manhua still completely has my heart!
+          </i></p>
+
+        <div class="dropdown">
+          <img src="Images\My food looks very cute today.webp">
+          <ul>
+            <li><b>Synopsis:</b> For nearly two centuries, the vampire Maria slumbered in her coffin 
+              — until Xing Lan (星阑), a wandering werewolf girl, 
+              happened upon her resting place and awakened her. As Xing Lan opened the coffin,
+               a curse sealed itself upon her, leaving her none the wiser. The naïve but spirited wolf 
+               girl cheerfully embraced her newfound companion.
+               Together, they embarked on a journey to the city...</li>
+              <li><b>Original Language:</b> Chinese</li>
+              <li><b>Chapters: </b>228</li>
+              <li><b>Finished Updating?:</b> Finished</li>
+          </ul>
+        </div>
+
+          <ul class="more-info">
+            <li><b>Rating:</b> 4.5 stars </li>
+            <li><b>Finished:</b> Finished reading </li>
+            <li><b>Chapters Read:</b> 228/228 </li>
+          </ul>
+          <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)"> </img>
        
        
   </div>
