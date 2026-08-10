@@ -109,8 +109,7 @@
       <p class="caption">Click anywhere on card to close</p>
     </div>
     <span class="btn">
-    <button class="Generate-btn" value="Generate next read" onclick="generateRead()">Generate next read</button>
-    </span>
+    <button class="Generate-btn"  onclick="generateRead()">Generate next read</button>
   </div>
 
   <div class="generator-side">
@@ -144,18 +143,36 @@
     </div>
   </div>
 </div>
-<!-- 
- <div class="sites">
-    <h2>Reading Sites</h2>
-    <hr>
-     <div class="links">
-        <img src="image1.jpg" class="carousel-img active">
-        <img src="image2.jpg" class="carousel-img">
-        <a href="https://m.happymh.com/">Happy Manhua</a>
-        <a href="https://mangadex.org/">MangaDex</a>
-    </div>
-  </div> -->
 
+<div class="sites">
+    <h2>Reading Sites</h2>
+    <p>Click on the images to go to the sites</p>
+    <hr>
+
+    <div class="links">
+
+        <div class="carousel-track">
+
+            <a href="https://www.lezhinus.com/en" target="_blank" class="slide">
+                <img src="Images\LezhinComics.webp">
+            </a>
+
+           <a href="https://m.happymh.com/" target="_blank" class="slide">
+                <img src="Images\HappyMH.jpeg">
+            </a>
+
+            <a href="https://mangadex.org/" target="_blank" class="slide">
+                <img src="Images/MangaDex.png">
+            </a>
+
+            <a href="https://manga.bilibili.com/" target="_blank" class="slide">
+                <img src="Images\bilibili.webp">
+            </a>
+
+        </div>
+
+    </div>
+</div>
 
 
 <br>
@@ -176,44 +193,22 @@
           <label class="form-label d-block">Genres</label>
 
           <div class="d-flex flex-wrap gap-2">
+            
+            <label class="btn btn-outline-primary rounded-pill" for="action">Action</label>
             <input type="checkbox" class="btn-check" id="action" name="genres" value="Action">
-            <label class="btn btn-outline-primary rounded-pill" for="action">
-              Action
-            </label>
 
+            <label class="btn btn-outline-primary rounded-pill" for="adventure">Adventure</label>
             <input type="checkbox" class="btn-check" id="adventure" name="genres" value="Adventure">
-            <label class="btn btn-outline-primary rounded-pill" for="adventure">
-              Adventure
-            </label>
 
+            <label class="btn btn-outline-primary rounded-pill" for="comedy">Comedy</label>
             <input type="checkbox" class="btn-check" id="comedy" name="genres" value="comedy">
-            <label class="btn btn-outline-primary rounded-pill" for="comedy">
-              Comedy
-            </label>
 
-            <input
-              type="checkbox"
-              class="btn-check"
-              id="drama"
-              name="genres"
-              value="Drama"
-              autocomplete="off"
-            >
-            <label class="btn btn-outline-primary rounded-pill" for="drama">
-              Drama
-            </label>
+            <label class="btn btn-outline-primary rounded-pill" for="drama"> Drama </label>
+            <input type="checkbox" class="btn-check" id="drama" name="genres" value="Drama">
 
-            <input
-              type="checkbox"
-              class="btn-check"
-              id="fantasy"
-              name="genres"
-              value="Fantasy"
-              autocomplete="off"
-            >
-            <label class="btn btn-outline-primary rounded-pill" for="fantasy">
-              Fantasy
-            </label>
+            <label class="btn btn-outline-primary rounded-pill" for="fantasy">Fantasy</label>
+            <input type="checkbox"class="btn-check"id="fantasy"name="genres"value="Fantasy">
+            
 
             <input
               type="checkbox"

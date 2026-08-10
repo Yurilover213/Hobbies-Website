@@ -1,23 +1,29 @@
-<div class="container mt-4">
-    <h2 id="displayBookTitle"></h2>
+<!DOCTYPE html>
+<html lang="en">
 
-    <p id="displayGenres"></p>
-    <p id="displayRating"></p>
-    <p id="displayTotalChapters"></p>
-    <p id="displayChaptersRead"></p>
+<style>
+    ol li{
+        margin: 20px;
+        font-size: 20px
+    }
+</style>
 
-    <h4>Synopsis</h4>
-    <p id="displaySynopsis"></p>
 
-    <h4>Review</h4>
-    <p id="displayReview"></p>
-</div>
+
+<ol>
+    <li id="BookTitle"></li>
+    <li id="Genres"></li>
+    <li id="Rating"></li>
+    <li id="TotalChapters"></li>
+    <li id="ChaptersRead"></li>
+    <li id="Synopsis"></li>
+    <li id="Review"></li>
+
+</ol>
 
 <script>
-    // Get the information from the URL
     const formData = new URLSearchParams(window.location.search);
 
-    // Get each form value
     const bookTitle = formData.get("bookTitle");
     const genres = formData.getAll("genres");
     const rating = formData.get("rating");
@@ -26,25 +32,11 @@
     const synopsis = formData.get("synopsis");
     const review = formData.get("review");
 
-    // Write the information onto the page
-    document.querySelector("#displayBookTitle").textContent =
-        bookTitle || "No book title entered";
-
-    document.querySelector("#displayGenres").textContent =
-        "Genres: " + (genres.length > 0 ? genres.join(", ") : "None selected");
-
-    document.querySelector("#displayRating").textContent =
-        "Rating: " + (rating ? rating + "/5" : "Not rated");
-
-    document.querySelector("#displayTotalChapters").textContent =
-        "Total Chapters: " + (totalChapters || "Not entered");
-
-    document.querySelector("#displayChaptersRead").textContent =
-        "Chapters Read: " + (chaptersRead || "Not entered");
-
-    document.querySelector("#displaySynopsis").textContent =
-        synopsis || "No synopsis entered";
-
-    document.querySelector("#displayReview").textContent =
-        review || "No review entered";
+    document.querySelector("#BookTitle").textContent = "Book Title: " + bookTitle 
+    document.querySelector("#Genres").textContent = "Genres: " + (genres.join(", "));
+    document.querySelector("#Rating").textContent = "Rating: " + ( rating + "/5" );
+    document.querySelector("#TotalChapters").textContent = "Total Chapters: " + (totalChapters);
+    document.querySelector("#ChaptersRead").textContent = "Chapters Read: " + (chaptersRead);
+    document.querySelector("#Synopsis").textContent = "Synopsis: " + synopsis ;
+    document.querySelector("#Review").textContent = "Review: " + review;
 </script>

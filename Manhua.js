@@ -26,9 +26,7 @@ function searchContent() {
     books.forEach(function (bookTitle) {
         const title = bookTitle.textContent.toLowerCase();
         const bookContainer = bookTitle.closest(".books");
-        
-
-     ;
+            
 
         if (title.includes(input)) {
             titles ++;
@@ -60,13 +58,9 @@ function currentPage(){
     })
     
 }
-
-window.addEventListener("DOMContentLoaded", currentPage);
-
-
+window.addEventListener("DOMContentLoaded", currentPage);    
 
 function filterTag(tag) {
-    let tag = document.querySelectorAll()
     const books = document.querySelectorAll(".books");
     const title = document.querySelector(".category-shown")
 
