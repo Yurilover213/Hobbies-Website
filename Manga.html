@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manga</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Manhua.js"></script>
@@ -15,6 +16,8 @@
 <body>
   <img src="Images/download (3).jpg" class="page-icon">
   <h1 class="site-title">Lily Archive</h1>
+
+  <!--Navigation Bar-->
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container-fluid">
@@ -45,6 +48,8 @@
     </div>
   </nav>
 
+  <!--Introduction-->
+
     <div class="header">
         <h1>Manhwa</h1>
         <hr>
@@ -54,6 +59,9 @@
           through webtoon platforms alongside their manga and manhua counterparts.
         </p>
     </div>
+
+    <!--Summary Table-->
+
     <div class="summary">
       <table class="summary-table" border="1">
         <tr>
@@ -61,7 +69,7 @@
         </tr>
         <tr>
           <th>Finished Reading:</th>
-          <td>4</td>
+          <td>3</td>
         </tr>
         <tr>
           <th>Still Reading:</th>
@@ -74,18 +82,28 @@
       </table>
     </div>
 
+ <!--Books-->
+
       <h2 class="category-shown">Recently Read</h2>
-        <input type="text" placeholder="Search for book" id="search" class="search" onkeyup="searchContent()">
+
+  <!--Search Bar-->
+      <input type="text" placeholder="Search for book(Only using book's english title)" id="search" class="search" onkeyup="searchContent()">
       <hr>
       <button onclick="showAll()" class="filter-reset">Show All</button>
       <hr>
+
   <div class="archive-section">
+
+<!--Book1-->
+
        <div class="books" id="books">
-        <p class="date">22 October 2022</p>
+        <p class="date">22 October 2025</p>
         <h3 class="book-title">Can't Defy The Lonely Girl【ロンリーガールに逆らえない】</h3>
+
         <ul class="by-line"> 
           <li class="author">Kashikaze</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('School Life')">School Life</li>
@@ -95,7 +113,7 @@
         <p class="description">
           <b>Review:</b><i> I really enjoyed how tolerant Ayaka is and how cheeky Sora is. </i></p>
 
-      <div class="dropdown">
+      <div class="dropdown"
           <img src="Images\I_Can't_Say_No_to_the_Lonely_Girl_1_Japanese_Cover.jpg">
           <ul>
             <li><b>Synopsis:</b>Ayaka Sakurai is an excellent student, but she gets nervous at exams, so she had to settle for a 
@@ -117,23 +135,30 @@
        
        
   </div>
+
+  <!--Book2-->
+
 <div class="books" id="books">
         <p class="date">28 April 2024</p>
         <h3 class="book-title">Yuri is Forbidden for Yuri Ota?!【百合オタに百合は御法度です！？】</h3>
+
         <ul class="by-line"> 
           <li class="author">U-temo</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Comedy')">Comedy</li>
           <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('School Life')">School Life</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> They're really cute together and how they fight.
           </i></p>
 
         <div class="dropdown">
+
           <img src="Images\yuri-is-taboo-to-a-yuri-otaku-v0-t7if2wq4280c1.webp">
           <ul>
             <li><b>Synopsis:</b>Watanabe Fuyu is a diehard fan of yuri, so she studied hard to get into an all-girls private school and 
@@ -156,12 +181,17 @@
        
        
   </div>
+
+  <!--Book3-->
+
   <div class="books" id="books">
         <p class="date">2 February 2024</p>
         <h3 class="book-title">The Summer You Were There【君と綴るうたかた】</h3>
+
         <ul class="by-line"> 
           <li class="author">Yuama</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('Tragedy')">Tragedy</li>
@@ -169,12 +199,14 @@
           <li onclick="filterTag('Medical')">Medical</li>
           <li onclick="filterTag('Psychological')">Psychological</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> 10/10 would read again. I cried really hard for Kaori.
           </i></p>
 
         <div class="dropdown">
+
           <img src="Images\Thesummeryouwerethere.jpg">
           <ul>
             <li><b>Synopsis:</b>Shizuku Hoshikawa, a high school girl who lives avoiding contact with people, writes a novel which is accidentally read by her classmate Kaori Asaka.  

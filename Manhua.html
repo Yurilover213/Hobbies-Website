@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhua</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Manhua.js"></script>
@@ -15,6 +16,8 @@
 <body>
   <img src="Images\download (3).jpg" class="page-icon">
   <h1 class="site-title">Lily Archive</h1>
+
+  <!--Navigation bar-->
   
    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container-fluid">
@@ -45,15 +48,20 @@
     </div>
   </nav>
 
+  <!--Introduction-->
+
     <div class="header">
         <h1>Manhua</h1>
         <hr>
         <p>
           Manhua originates from China and hence is mainly created by chinese authors. Most Manhuas are originally 
           written in chinese but with todays technology, many are transalated to english, allowing it to reach a global
-          audience,similar to their korean and japaneses counterparts.
+          audience, similarily to their korean and japaneses counterparts. 
         </p>
     </div>
+
+    <!--Summary Table-->
+
     <div class="summary">
       <table class="summary-table" border="1">
         <tr>
@@ -65,7 +73,7 @@
         </tr>
         <tr>
           <th >Still Reading:</th> 
-          <td >3</td>
+          <td >2</td>
         </tr>
         <tr>
           <th >To Be Read: </th>
@@ -73,24 +81,34 @@
         </tr>
       </table>
     </div>
+
+    <!--Books-->
  
         <h2 class="category-shown">Recently Read</h2>
-          <input type="text" placeholder="Search for book" id="search" class="search" onkeyup="searchContent()">
+
+    <!--Search Bar-->
+        <input type="text" placeholder="Search for book(Only using book's english title)" id="search" class="search" onkeyup="searchContent()">
         <hr>
         <button onclick="showAll()" class="filter-reset">Show All</button>
         <hr>
 <div class="archive-section">
+
+    <!--Book 1-->
+
       <div class="books" id="books">
         <p class="date">16 July 2026</p>
         <h3 class="book-title">Miss Forensics【亲爱的法医小姐】</h3>
+
         <ul class="by-line"> 
           <li class="author">Anonymous</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('Mystery')">Mystery</li>
           <li onclick="filterTag('Thriller')">Thriller</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> I really enjoy this Mahua's premise as this is the first time Ive seen a comic incoporate forensic science
@@ -100,6 +118,7 @@
           it continues keeping this standard of storytelling down the line.</i></p>
 
            <div class="dropdown">
+
           <img src="Images\miss-forensics-1.webp">
           <ul>
             <li><b>Synopsis:</b> "Miss Forensics" (also known as My Dear Forensic Lady, 
@@ -125,17 +144,22 @@
        
   </div>
 
+  <!--Book 2-->
+
   <div class="books" id="books">
         <p class="date">2 January 2026</p>
         <h3 class="book-title">My food looks very cute!【我的食物看起来很可爱】</h3>
+
         <ul class="by-line"> 
           <li class="author">Anonymous</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Slice-Of-Life')">Slice-Of-Life</li>
           <li onclick="filterTag('Supernatural')">Supernatural</li>
           <li onclick="filterTag('Fluff')">Fluff</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> I love this manhua so much. The characters have such good chemistry with one another!
@@ -146,6 +170,7 @@
           </i></p>
 
         <div class="dropdown">
+
           <img src="Images\My food looks very cute today.webp">
           <ul>
             <li><b>Synopsis:</b> For nearly two centuries, the vampire Maria slumbered in her coffin 
@@ -161,26 +186,32 @@
         </div>
 
           <ul class="more-info">
+
             <li><b>Rating:</b> 4.5 stars </li>
             <li><b>Finished:</b> Finished reading </li>
             <li><b>Chapters Read:</b> 228/228 </li>
           </ul>
           <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)">  </img>
        
-       
+
   </div>
+
+    <!--Book3-->
 
    <div class="books" id="books">
         <p class="date">2 January 2026</p>
         <h3 class="book-title">Tamen De Gushi 【他们的故事】</h3>
+
         <ul class="by-line"> 
           <li class="author">tan jiu【坛九】</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Slice-Of-Life')">Slice-Of-Life</li>
           <li onclick="filterTag('Highschool')">Highschool</li>
           <li onclick="filterTag('Fluff')">Fluff</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> This manhua was the first one that I had ever read. Until this day it still holds
@@ -191,6 +222,7 @@
           </i></p>
 
         <div class="dropdown">
+
           <img src="Images\tamende gushi.jpg">
           <ul>
             <li><b>Synopsis:</b> The story follows the daily lives of Sun Jing and Qiu Tong, two teenagers attending different high schools, 
@@ -202,6 +234,7 @@
         </div>
 
           <ul class="more-info">
+
             <li><b>Rating:</b> 5 stars </li>
             <li><b>Finished:</b> Finished reading </li>
             <li><b>Chapters Read:</b> 250/250 </li>
@@ -209,19 +242,24 @@
           <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)"> </img>
           
        
-       
   </div>
+
+  <!--Book 4-->
+
    <div class="books" id="books">
         <p class="date">26 July 2025</p>
         <h3 class="book-title">Clear and The Muddy Loss of Love 【泾渭情殇】</h3>
+
         <ul class="by-line"> 
           <li class="author">Qing Jun Mo Xiao 【请君莫笑】</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Historical')">Historical</li>
           <li onclick="filterTag('Action')">Action</li>
           <li onclick="filterTag('Drama')">Drama</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> This reccomendation is not inherently a comic but more of a visual novel. Despite this
@@ -233,6 +271,7 @@
           </i></p>
 
         <div class="dropdown">
+
           <img src="Images/Clear-and-Muddy-Loss-of-Love.jpeg">
           <ul>
             <li><b>Synopsis:</b>A natural moat called the Luo river split the great land into two. Jing of the north, and Wei of the south.
@@ -247,6 +286,7 @@
         </div>
 
           <ul class="more-info">
+
             <li><b>Rating:</b> 4 stars </li>
             <li><b>Finished:</b> Still Reading</li>
             <li><b>Chapters Read:</b> 200/307 </li>
@@ -256,6 +296,9 @@
     <p class="no-results">Try searching for another title</p>
     </div>
 </div>
+
+    <h2 class="no-results">No results found</h2>
+    <p class="no-results">Try searching for another title</p>
 
 </body>
 

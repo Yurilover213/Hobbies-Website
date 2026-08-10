@@ -1,4 +1,4 @@
-/* navigation */
+/* Page name */
 
 .site-title{
     font-size: 30px;
@@ -16,6 +16,8 @@
     
 }
 
+/*Navigation Bar*/
+
 .container-fluid{
     background-color: brown;
     
@@ -24,7 +26,10 @@
 #navbar{
     padding: 0px;
     border-radius: 5px;
-    border: 2px solid rgb(85, 23, 23)
+    border: 2px solid rgb(85, 23, 23);
+    position:sticky;
+    top:0;
+    z-index: 20
 }
 
 .nav-item a, .navbar-brand{
@@ -74,11 +79,6 @@ hr{
     border: 2px solid brown;
 }
 
-.solid_1{
-    position: relative;            
-    max-height: 750px;             
-
-}
 
 
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhwa</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Manhua.js"></script>
@@ -15,6 +16,8 @@
 <body>
   <img src="Images/download (3).jpg" class="page-icon">
   <h1 class="site-title">Lily Archive</h1>
+
+  <!--Navigation Bar-->
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container-fluid">
@@ -45,6 +48,8 @@
     </div>
   </nav>
 
+  <!--Introduction-->
+
     <div class="header">
         <h1>Manhwa</h1>
         <hr>
@@ -54,6 +59,8 @@
           through webtoon platforms alongside their manga and manhua counterparts.
         </p>
     </div>
+
+  <!--Summary Table-->
     <div class="summary">
       <table class="summary-table" border="1">
         <tr>
@@ -65,7 +72,7 @@
         </tr>
         <tr>
           <th>Still Reading:</th>
-          <td>2</td>
+          <td>1</td>
         </tr>
         <tr>
           <th>To Be Read: </th>
@@ -74,28 +81,39 @@
       </table>
     </div>
 
+    <!--Books-->
+
       <h2 class="category-shown">Recently Read</h2>
-        <input type="text" placeholder="Search for book" id="search" class="search" onkeyup="searchContent()">
+
+    <!--Search Bar-->
+        <input type="text" placeholder="Search for book(Only using book's english title)" id="search" class="search" onkeyup="searchContent()">
       <hr>
       <button onclick="showAll()" class="filter-reset">Show All</button>
       <hr>
   <div class="archive-section">
+
+    <!--Book1-->
+
        <div class="books" id="books">
-        <p class="date">4 December 2021</p>
+        <p class="date">4 December 2025</p>
         <h3 class="book-title">Sora & Haena【소라해나!】</h3>
+
         <ul class="by-line"> 
           <li class="author">Jackbull</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Comedy')">Comedy</li>
           <li onclick="filterTag('Drama')">Drama</li>
           <li onclick="filterTag('School Life')">School Life</li>
         </ul>
+
         <br>
         <p class="description">
           <b>Review:</b><i> I really enjoy this Manhwa's slice of life elements and the way they tackled </i></p>
 
       <div class="dropdown">
+
           <img src="Images\Sora&Haena.png">
           <ul>
             <li><b>Synopsis:</b> Sora Yoon can hardly look a person in the eye without becoming a nervous mess.
@@ -119,14 +137,16 @@
        
   </div>
 
-    <!-- Add more entries here-->
+    <!--Book2-->
 
     <div class="books" id="books">
-        <p class="date">25 July 2020</p>
+        <p class="date">5 August 2025</p>
         <h3 class="book-title">The Love Doctor【이성연애박사】</h3>
+
         <ul class="by-line"> 
           <li class="author"> Chamsae</li>
         </ul>
+
         <ul class="tags">
           <li onclick="filterTag('Comedy')">Comedy</li>
           <li onclick="filterTag('Drama')">Drama</li>
@@ -138,6 +158,7 @@
           </i></p>
 
         <div class="dropdown">
+          
           <img src="Images\the-love-doctor.webp">
           <ul>
             <li><b>Synopsis:</b> Jung Erae has no clue about relationships and men to the point where she drives every man away. 
@@ -159,32 +180,57 @@
        
   </div>
 
+   <!--Book2-->
+
+    <div class="books" id="books">
+        <p class="date">25 January 2025</p>
+        <h3 class="book-title">I love amy</h3>
+
+        <ul class="by-line"> 
+          <li class="author">Unni</li>
+        </ul>
+
+        <ul class="tags">
+          <li onclick="filterTag('Comedy')">Comedy</li>
+          <li onclick="filterTag('Psychological')">Psychological</li>
+          <li onclick="filterTag('Slice-Of-Life')">Slice-Of-Life</li>
+        </ul>
+        <br>
+        <p class="description">
+          <b>Review:</b><i> The story keeps me on my toes which I find quite refreshing for a manhwa 
+            with such an artstyle. This Manhwa is short and sweet which I enjoy very much. The author really knows
+            how to tie off a story properly and satisfyingly
+          </i></p>
+
+        <div class="dropdown">
+          
+          <img src="Images\I love amy.webp">
+          <ul>
+            <li><b>Synopsis:</b> Bibi is obsessed with Peter, the prince of the school. 
+              When she spots Amy next to him, she starts to feel jealous. 
+              She invites Amy to her house to warn her, but instead takes a liking to the girl. 
+              They agree to be friends on the condition that Amy has to help Bibi confess.</li>
+              <li><b>Original Language:</b> Korean </li>
+              <li><b>Chapters: </b>46</li>
+              <li><b>Finished Updating?:</b> Finished</li>
+          </ul>
+        </div>
+
+          <ul class="more-info">
+            <li><b>Rating:</b> 4.2 stars </li>
+            <li><b>Finished:</b> Finished </li>
+            <li><b>Chapters Read:</b> 46/46 </li>
+          </ul>
+          <img src="Images\arrow down.webp" class="reveal-btn" id="reveal-more" onclick="toggleContent(this)">  </img>
+       
+       
+  </div>
+
     <h2 class="no-results">No results found</h2>
     <p class="no-results">Try searching for another title</p>
 
 
-  
-      
 
-        
-
-  
-        
-
-        
-
-
-
-
-    
-
-        
-   
-
-
-
-    </div>
-</div>
 </body>
 
 </html>

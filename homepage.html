@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <script src="https://cdn.jsdelivr.net/npm/Generate-btnbootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script></script>
     <script src="Manhua.js"></script>
     <script src="Homepage.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,6 +15,8 @@
 </head>
 
 <body>
+
+  <!-- Navigation -->
   
   <img src="Images\download (3).jpg" class="page-icon">
   <h1 class="site-title">Lily Archive</h1>
@@ -48,36 +51,39 @@
   </nav>
 
   
-<div class="solid_1">
     <div class="header">
+
+      <!-- introduction -->
+
         <h1>Homepage</h1>
         <hr>
         <p>
-          Hello dear user and welcome to my hobbies' website! This website is mainly about my love for 
-          comics and if you like reading comics too, you are surely in the right place! In the different pages of this
-          site, I have archived the many different comics that I have read and have written my thoughts and feelings about
-          each comic. 
+          Hello dear user and welcome to Lily Archive! This website is mainly to share my love of comics with people and archive my thoughts
+          on most of the comics I have read. Feel free to look around and interact with the site, I promise I won't bite :D Maybe you'll
+          find a new comic or two that interests you before you leave. Happy browsing!
         </p>
     </div>
-
+   
+    <!-- Leaderboard -->
+<div class="leaderboard">
     <div class="leaderboard-all">
+
      <ol>
       <li class="winner">Tamen de gushi</li>
       <li class="winner">Miss Forensics</li>
       <li class="winner">My food seems to be very cute today</li>
       <li>I Love Amy</li>
       <li>The Summer You Were There</li>
-      <li>Whisper me a love song</li>
-      <li>The guy she was interested in wasnt a guy at all</li>
-      <li>Im more dangerous than you</li>
-      <li>Best Friends</li>
+      <li>The love doctor</li>
+      <li>Clear and Muddy loss of love</li>
+      <li>Sora and Haena</li>
      </ol>
 
     </div>
 
-
     <div class="leaderboard-top3">
       <h2>Weekly Ranking</h2>
+
       <div class="top3">
       <img src="Images\tamende gushi.jpg" alt="tamen de gushi book cover" class="first" id="board">
       <img src="Images\miss-forensics-1.webp" class="second" id="board">
@@ -85,10 +91,13 @@
       </div>
       <img src="Images\Untitled_no_bg.png" class="leaderboard-steps">
     </div>
-
   </div>
 
-<div class="generator-layout">
+
+
+<div class="whole-layout">
+
+  <!--Book Generator-->
 
   <div class="book-generator">
     <h2>Don't know what to read?</h2>
@@ -97,22 +106,29 @@
       <img src="Images\Untitled_no_bg (1).png" class="file">
       <img src="Images\tamende gushi.jpg" class="book-generated" onclick="enhance()">
     </div>
+
+      <!--Pop-up card-->
+
     <div class="card-bg" onclick="enhance()">
+
       <h2>Title</h2>
       <ul class="overall">
         <li class="synopsis"></li>
         <li class="type"></li>
-        <li><ul class="tags">
-
-        </ul></li>
+        <li><ul class="tags"></ul></li>
       </ul>
+
       <p class="caption">Click anywhere on card to close</p>
     </div>
+
     <span class="btn">
     <button class="Generate-btn"  onclick="generateRead()">Generate next read</button>
   </div>
 
   <div class="generator-side">
+
+    <!--News Section-->
+
     <div class="news-section">
       <h2>Whats New</h2>
       <hr>
@@ -132,6 +148,8 @@
       </div>
     </div>
 
+    <!--Spotify Playlist-->
+
     <div class="frame">
       <h2>Reading Playlist</h2>
       <p>Try out some tunes while your read: </p>
@@ -144,42 +162,30 @@
   </div>
 </div>
 
+<!--Reading Sites Carousel-->
+
 <div class="sites">
     <h2>Reading Sites</h2>
     <p>Click on the images to go to the sites</p>
     <hr>
 
     <div class="links">
-
         <div class="carousel-track">
 
-            <a href="https://www.lezhinus.com/en" target="_blank" class="slide">
-                <img src="Images\LezhinComics.webp">
-            </a>
-
-           <a href="https://m.happymh.com/" target="_blank" class="slide">
-                <img src="Images\HappyMH.jpeg">
-            </a>
-
-            <a href="https://mangadex.org/" target="_blank" class="slide">
-                <img src="Images/MangaDex.png">
-            </a>
-
-            <a href="https://manga.bilibili.com/" target="_blank" class="slide">
-                <img src="Images\bilibili.webp">
-            </a>
-
+          <a href="https://www.lezhinus.com/en" target="_blank" class="slide"><img src="Images\LezhinComics.webp"></a>
+          <a href="https://m.happymh.com/" target="_blank" class="slide"><img src="Images\HappyMH.jpeg"></a>
+          <a href="https://mangadex.org/" target="_blank" class="slide"><img src="Images/MangaDex.png"></a>
+          <a href="https://manga.bilibili.com/" target="_blank" class="slide"><img src="Images\bilibili.webp"></a>
         </div>
-
     </div>
 </div>
 
 
 <br>
-<div class="container py-4">
-  <div class="card shadow-sm">
-    <div class="card-body">
-      <h2 class="card-title mb-4">Comic Recommendations</h2>
+<div class="card-body">
+      <h2>Comic Recommendations</h2>
+      <p>Tell us some of your reccomendations!</p>
+      <hr>
 
       <form id="comicForm" action="formpage.html" method="GET">
         <!-- Book Title -->
@@ -194,45 +200,27 @@
 
           <div class="d-flex flex-wrap gap-2">
             
-            <label class="btn btn-outline-primary rounded-pill" for="action">Action</label>
+            <label class="btn btn-outline-primary  " for="action">Action</label>
             <input type="checkbox" class="btn-check" id="action" name="genres" value="Action">
 
-            <label class="btn btn-outline-primary rounded-pill" for="adventure">Adventure</label>
-            <input type="checkbox" class="btn-check" id="adventure" name="genres" value="Adventure">
+            <label class="btn btn-outline-primary  " for="adventure">Adventure</label>
+            <input type="checkbox" class="btn-check" id="adventure" name="genres" value="Adventure" autocomplete="off">
 
-            <label class="btn btn-outline-primary rounded-pill" for="comedy">Comedy</label>
-            <input type="checkbox" class="btn-check" id="comedy" name="genres" value="comedy">
+            <label class="btn btn-outline-primary  " for="comedy">Comedy</label>
+            <input type="checkbox" class="btn-check" id="comedy" name="genres" value="comedy" autocomplete="off">
 
-            <label class="btn btn-outline-primary rounded-pill" for="drama"> Drama </label>
-            <input type="checkbox" class="btn-check" id="drama" name="genres" value="Drama">
+            <label class="btn btn-outline-primary  " for="drama"> Drama </label>
+            <input type="checkbox" class="btn-check" id="drama" name="genres" value="Drama" autocomplete="off">
 
-            <label class="btn btn-outline-primary rounded-pill" for="fantasy">Fantasy</label>
-            <input type="checkbox"class="btn-check"id="fantasy"name="genres"value="Fantasy">
+            <label class="btn btn-outline-primary  " for="fantasy">Fantasy</label>
+            <input type="checkbox"class="btn-check"id="fantasy"name="genres"value="Fantasy" autocomplete="off">
             
+            <label class="btn btn-outline-primary  " for="horror">Horror</label>
+            <input type="checkbox" class="btn-check" id="horror" name="genres" value="Horror" autocomplete="off">
+          
 
-            <input
-              type="checkbox"
-              class="btn-check"
-              id="horror"
-              name="genres"
-              value="Horror"
-              autocomplete="off"
-            >
-            <label class="btn btn-outline-primary rounded-pill" for="horror">
-              Horror
-            </label>
-
-            <input
-              type="checkbox"
-              class="btn-check"
-              id="mystery"
-              name="genres"
-              value="Mystery"
-              autocomplete="off"
-            >
-            <label class="btn btn-outline-primary rounded-pill" for="mystery">
-              Mystery
-            </label>
+            <input type="checkbox" class="btn-check" id="mystery" name="genres" value="Mystery" autocomplete="off">
+            <label class="btn btn-outline-primary " for="mystery">Mystery</label>
 
             <input
               type="checkbox"
@@ -242,82 +230,39 @@
               value="Romance"
               autocomplete="off"
             >
-            <label class="btn btn-outline-primary rounded-pill" for="romance">
+            <label class="btn btn-outline-primary  " for="romance">
               Romance
             </label>
 
-            <input
-              type="checkbox"
-              class="btn-check"
-              id="sliceOfLife"
-              name="genres"
-              value="Slice of Life"
-              autocomplete="off"
-            >
-            <label class="btn btn-outline-primary rounded-pill" for="sliceOfLife">
-              Slice of Life
-            </label>
-          </div>
+            <input type="checkbox" class="btn-check" id="sliceOfLife" name="genres" value="Slice of Life" autocomplete="off">
+            <label class="btn btn-outline-primary  " for="sliceOfLife">Slice of Life</label>
 
-          <div class="form-text">
-            Select one or more genres.
+            <input type="checkbox" class="btn-check" id="others" name="genres" value="others" autocomplete="off">
+            <label class="btn btn-outline-primary" for="sliceOfLife">Others</label>
+
           </div>
+          <p>Select one or more genres.</p>
+
         </div>
 
         <!-- Rating -->
         <div class="mb-3">
           <label class="form-label d-block">Rating out of 5</label>
 
-          <div class="btn-group" role="group" aria-label="Comic rating">
-            <input
-              type="radio"
-              class="btn-check"
-              name="rating"
-              id="rating1"
-              value="1"
-              autocomplete="off"
-              required
-            >
+          <div class="rating">
+            <input type="radio" class="btn-check"name="rating" id="rating1"value="1" autocomplete="off" required>
             <label class="btn btn-outline-warning" for="rating1">1 ★</label>
 
-            <input
-              type="radio"
-              class="btn-check"
-              name="rating"
-              id="rating2"
-              value="2"
-              autocomplete="off"
-            >
+            <input type="radio" class="btn-check" name="rating" id="rating2" value="2" autocomplete="off">
             <label class="btn btn-outline-warning" for="rating2">2 ★</label>
 
-            <input
-              type="radio"
-              class="btn-check"
-              name="rating"
-              id="rating3"
-              value="3"
-              autocomplete="off"
-            >
+            <input type="radio" class="btn-check" name="rating" id="rating3" value="3" autocomplete="off" >
             <label class="btn btn-outline-warning" for="rating3">3 ★</label>
 
-            <input
-              type="radio"
-              class="btn-check"
-              name="rating"
-              id="rating4"
-              value="4"
-              autocomplete="off"
-            >
+            <input type="radio" class="btn-check" name="rating" id="rating4"value="4"autocomplete="off">
             <label class="btn btn-outline-warning" for="rating4">4 ★</label>
 
-            <input
-              type="radio"
-              class="btn-check"
-              name="rating"
-              id="rating5"
-              value="5"
-              autocomplete="off"
-            >
+            <input type="radio" class="btn-check" name="rating" id="rating5" value="5" autocomplete="off">
             <label class="btn btn-outline-warning" for="rating5">5 ★</label>
           </div>
         </div>
@@ -370,28 +315,17 @@
 
           <div class="mb-4">
           <label for="Review" class="form-label">Review</label>
-          <textarea
-            name="review"
-            class="form-control"
-            id="Review"
-            rows="5"
-            placeholder="Enter your review"
-            required
-          ></textarea>
+          <textarea name="review" class="form-control" id="Review" rows="5" placeholder="Enter your review"required></textarea>
+
         </div>
 
         <!-- Buttons -->
         <div class="d-flex gap-2">
-          <button type="submit" class="btn btn-success">
-            Add Recommendation
-          </button>
-
-          <button type="reset" class="btn btn-outline-secondary">
-            Clear Form
-          </button>
+          <button type="submit" class="btn btn-success">Add Recommendation </button>
+          <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
         </div>
+        
       </form>
-    </div>
   </div>
-</div>
+
 

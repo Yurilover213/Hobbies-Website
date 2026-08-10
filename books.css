@@ -1,5 +1,5 @@
 
-
+/*SearchBar Color change*/
 
 @keyframes border-change {
     from {
@@ -10,6 +10,8 @@
         background-position: 0 0, 200% 0;
     }
 }
+
+/*Introduction*/
 
 .header h1{
     text-align:center;
@@ -30,7 +32,7 @@ hr{
     border: 3px solid brown;
 }
 
-
+/*Summary Table*/
 
 .summary-table  th, td{
     padding-left: 10px;
@@ -56,6 +58,38 @@ h2{
     width:30%
 }
 
+/*Book archive section search function*/
+
+.search{
+    margin:5px;
+    border-radius: 30px;
+    border:1px brown solid;
+    padding:10px;
+    width:100%;
+
+}
+
+.search:hover{
+    border: 2px solid transparent;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to right, blue, violet,  pink, blue) border-box;
+
+    background-size: 100% 100%, 200% 100%;
+    animation: border-change 2.5s linear infinite;
+}
+
+/* no results msg */
+
+.no-results{
+    display: none;
+    text-align: center;
+    width:100%;
+    margin-top:20px
+
+}
+
+/*Book*/
 
 .books{
     border:1px solid brown;
@@ -71,7 +105,6 @@ h2{
     float: right;
     cursor: pointer;
 }
-
 
 
 .more-info li{
@@ -119,13 +152,14 @@ h2{
 .tags li:hover{
     color:grey;
     font-style: italic;
-    
 
 }
 
 .tags{
     padding:0px
 }
+
+/*Dropdown section of book*/
 
 .dropdown img{
     float: left;
@@ -152,47 +186,7 @@ h2{
     margin-bottom:0px
 }
 
-/* .reveal-btn{ */
-    
-   
-
-.search{
-    margin:5px;
-    border-radius: 30px;
-    border:1px brown solid;
-    padding:10px;
-    width:100%;
-
-}
-
-.search:hover{
-    border: 2px solid transparent;
-    background:
-        linear-gradient(white, white) padding-box,
-        linear-gradient(to right, blue, violet,  pink, blue) border-box;
-
-    background-size: 100% 100%, 200% 100%;
-    animation: border-change 2.5s linear infinite;
-}
-
-/* no results msg */
-
-.no-results{
-    display: none;
-    text-align: center;
-    width:100%;
-    margin-top:20px
-
-}
-
-.no{
-    display: none;
-    text-align: center;
-    width:100%;
-    margin-top:20px
-
-
-}
+/*Archive section layout*/
 
 .archive-section{
     overflow: auto;
