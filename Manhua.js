@@ -2,7 +2,7 @@ function toggleContent(button) {
     var container = button.closest(".books");
     var node = container.querySelector(".dropdown");
 
-    if (node.style.display === "none" || node.style.display === "") {
+    if (node.style.display === "none" ) {
         node.style.display = "block";
         button.style.transform = "rotate(180deg)";
     } else {
@@ -13,10 +13,7 @@ function toggleContent(button) {
 
 function searchContent() {
     const input = document
-        .getElementById("search")
-        .value
-        .toLowerCase()
-        .trim();
+        .getElementById("search") .value .toLowerCase().trim();
 
     const books = document.querySelectorAll(".book-title");
     const noResults = document.querySelector('.no-results');
