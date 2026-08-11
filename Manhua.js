@@ -61,7 +61,6 @@ function filterTag(tag) {
     const books = document.querySelectorAll(".books");
     const title = document.querySelector(".category-shown")
 
-
     books.forEach(function(book) {
         const bookTags = book.querySelector(".tags").textContent;
 
