@@ -381,7 +381,6 @@ iframe{
     position: relative;
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 400 / 250;
     overflow: hidden;
 }
 
@@ -404,6 +403,7 @@ iframe{
     overflow-y: none;
     display: block;
 }
+
 .form h2{
     text-align: center;
     margin-top:10px;
@@ -464,14 +464,6 @@ img {
     .Generate-btn {
         width: 45%;
         left: 27%;
-    }
-
-    .sites {
-        width: 100%;
-    }
-
-    .links {
-        max-width: 100%;
     }
 
 }
