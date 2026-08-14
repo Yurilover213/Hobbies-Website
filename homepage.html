@@ -8,7 +8,7 @@
     <script src="Manhua.js"></script>
     <script src="Homepage.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="navigation.css" rel="stylesheet">
+    <link href="Navigation.css" rel="stylesheet">
     <link href="Homepage.css" rel="stylesheet">
 
         
@@ -18,20 +18,20 @@
 
   <!-- Navigation -->
   
-  <img src="Images\download (3).jpg" class="page-icon">
+  <img src="Images\LilyLogo.jpg" class="page-icon">
   <h1 class="site-title">Lily Archive</h1>
   
-   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
     <div class="container-fluid">
 
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="homepage.html">Homepage</a>
@@ -47,275 +47,262 @@
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 
   
-    <div class="header">
+  <div class="header">
 
-      <!-- introduction -->
-
-        <h1>Homepage</h1>
-        <hr>
-        <p>
-          Hello dear user and welcome to Lily Archive! This website is mainly to share my love of comics with people and archive my thoughts
-          on most of the comics I have read. Feel free to look around and interact with the site, I promise I won't bite :D Maybe you'll
-          find a new comic or two that interests you before you leave. Happy browsing!
-        </p>
-    </div>
-   
-    <!-- Leaderboard -->
-<h2 class="leaderboard-title">Weekly Ranking</h2>
-<div class="leaderboard">
-  <div class="leaderboard-top3">
-
-    <div class="top3">
-      <img src="Images\tamende gushi.jpg" alt="tamen de gushi book cover" class="first" id="board">
-      <img src="Images\miss-forensics-1.webp" class="second" id="board">
-      <img src="Images\My food looks very cute today.webp" class="third" id="board"> 
-    </div>
-
-      <img src="Images\Untitled_no_bg.png" class="leaderboard-steps">
+    <!-- introduction -->
+    <h1>Homepage</h1>
+    <hr>
+    <p>
+      Hello and welcome to Lily Archive! This website is mainly to share my love of comics with people and archive my thoughts
+      on the comics that I have read. Feel free to look around and interact with the site, I promise I won't bite :D Maybe you'll
+      find a new comic or two that interests you before you leave. Happy browsing!
+    </p>
   </div>
+   
+  <!-- Leaderboard -->
+  <h2 class="leaderboard-title">Weekly Ranking</h2>
+
+  <div class="leaderboard">
+    <div class="leaderboard-top3">
+
+      <div class="top3">
+        <img src="Images\TamenDeGushiCover.jpg" alt="Tamen de Gushi book cover" class="first" id="board">
+        <img src="Images\MissForensicsCover.webp" alt="Miss Forensics book cover" class="second" id="board">
+        <img src="Images\MyFoodLooksVeryCuteTodayCover.webp" alt="My Food Looks Very Cute Today book cover" class="third" id="board"> 
+      </div>
+
+        <img src="Images\LeaderboardSteps.png" alt="leaderboard steps" class="leaderboard-steps">
+    </div>
 
 
     <div class="leaderboard-all">
 
-     <ol>
-      <li class="winner">Tamen de gushi</li>
-      <li class="winner">Miss Forensics</li>
-      <li class="winner">My food seems to be very cute today</li>
-      <li>I Love Amy</li>
-      <li>The Summer You Were There</li>
-      <li>The love doctor</li>
-      <li>Clear and Muddy loss of love</li>
-      <li>Sora and Haena</li>
-     </ol>
+      <ol>
+        <li class="winner">Tamen de gushi</li>
+        <li class="winner">Miss Forensics</li>
+        <li class="winner">My food seems to be very cute today</li>
+        <li>I Love Amy</li>
+        <li>The Summer You Were There</li>
+        <li>The love doctor</li>
+        <li>Clear and Muddy loss of love</li>
+        <li>Sora and Haena</li>
+      </ol>
 
-  </div>
-</div>
-  
-
-<div class="whole-layout">
-
-  <!--Book Generator-->
-
-  <div class="book-generator">
-    <h2>Don't know what to read?</h2>
-    <hr>
-    <div class="generator">
-      <img src="Images\Untitled_no_bg (1).png" class="file">
-      <img src="Images\tamende gushi.jpg" class="book-generated" onclick="enhance()">
     </div>
+  </div>
+    
+
+  <div class="whole-layout">
+
+    <!--Book Generator-->
+    <div class="book-generator">
+      <h2>Don't know what to read?</h2>
+      <hr>
+
+      <div class="generator">
+        <img src="Images\BookGenerator.png" alt="book gnerator" class="file">
+        <img src="" alt="" class="book-generated" onclick="enhance()">
+      </div>
 
       <!--Pop-up card-->
+      <div class="card-bg" onclick="enhance()">
 
-    <div class="card-bg" onclick="enhance()">
+        <h2>Title</h2>
+        <ul class="overall">
+          <li class="synopsis"></li>
+          <li class="type"></li>
+          <li><ul class="tags"></ul></li>
+        </ul>
 
-      <h2>Title</h2>
-      <ul class="overall">
-        <li class="synopsis"></li>
-        <li class="type"></li>
-        <li><ul class="tags"></ul></li>
-      </ul>
+        <p class="caption">Click anywhere on card to close</p>
+      </div>
 
-      <p class="caption">Click anywhere on card to close</p>
+      <span class="btn">
+      <button class="Generate-btn"  onclick="generateRead()">Generate next read</button>
     </div>
 
-    <span class="btn">
-    <button class="Generate-btn"  onclick="generateRead()">Generate next read</button>
-  </div>
+    <div class="generator-side">
 
-  <div class="generator-side">
+      <!--News Section-->
+      <div class="news-section">
+        <h2>Whats New</h2>
+        <hr>
 
-    <!--News Section-->
+        <div class="news">
+          <h5>Update 1.5</h5>
+          <p>A new entry has been made in the manhua section!</p>
+          <a href="Manhua.html">Click here to view</a>
+          <hr>
 
-    <div class="news-section">
-      <h2>Whats New</h2>
-      <hr>
-      <div class="news">
-        <h5>Update 1.5</h5>
-        <p>A new entry has been made in the manhua section!</p>
-        <a href="Manhua.html">Click here to view</a>
+          <h5>Update 1.4</h5>
+          <p>We have added a book generator feature. Go try it out!</p>
+          <hr>
+
+          <h5>Update 1.3</h5>
+          <p>We have updated this month's comic rankings! Go see what's new!</p>
+          <hr>
+
+        </div>
+      </div>
+
+      <!--Spotify Playlist-->
+      <div class="frame">
+        <h2>Reading Playlist</h2>
+        <p>Try out some tunes while your read: </p>
         <hr>
-        <h5>Update 1.4</h5>
-        <p>We have added a book generator feature. Go try it out!</p>
-        <hr>
-        <h5>Update 1.3</h5>
-        <p>We have updated this month's comic rankings! Go see what's new!</p>
-        <hr>
+        
+        <iframe data-testid="embed-iframe" style="border-radius:12px" 
+        src="https://open.spotify.com/embed/playlist/332mEuHLEsnZAInqxketI4?utm_source=generator&si=22ee956984034b42" 
+        width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+        fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
     </div>
-
-    <!--Spotify Playlist-->
-
-    <div class="frame">
-      <h2>Reading Playlist</h2>
-      <p>Try out some tunes while your read: </p>
-      <hr>
-      <iframe data-testid="embed-iframe" style="border-radius:12px" 
-      src="https://open.spotify.com/embed/playlist/332mEuHLEsnZAInqxketI4?utm_source=generator&si=22ee956984034b42" 
-      width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
-      fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
   </div>
-</div>
 
-<!--Reading Sites Carousel-->
-
-<div class="sites">
-    <h2>Reading Sites</h2>
-    <p>Click on the images to go to the sites</p>
-    <hr>
-
-    <div class="links">
-        <div class="carousel-track">
-
-          <a href="https://www.lezhinus.com/en" target="_blank" class="slide"><img src="Images\LezhinComics.webp"></a>
-          <a href="https://m.happymh.com/" target="_blank" class="slide"><img src="Images\HappyMH.jpeg"></a>
-          <a href="https://mangadex.org/" target="_blank" class="slide"><img src="Images/MangaDex.png"></a>
-          <a href="https://manga.bilibili.com/" target="_blank" class="slide"><img src="Images\bilibili.webp"></a>
-        </div>
-    </div>
-</div>
-
-
-<br>
-<div class="card-body">
-      <h2>Comic Recommendations</h2>
-      <p>Tell us some of your reccomendations!</p>
+  <!--Reading Sites Carousel-->
+  <div class="sites">
+      <h2>Reading Sites</h2>
+      <p>Click on the images to go to the sites</p>
       <hr>
 
-      <form id="comicForm" action="formpage.html" method="GET">
-        <!-- Book Title -->
-        <div class="mb-3">
-          <label for="bookTitle" class="form-label" >Book Title</label>
-          <input type="text" class="form-control"id="bookTitle" placeholder="Enter comic title" name="bookTitle" required>
-        </div>
+      <div class="links">
+          <div class="carousel-track">
 
-        <!-- Genre Tags -->
-        <div class="mb-3">
-          <label class="form-label d-block">Genres</label>
+            <a href="https://www.lezhinus.com/en" target="_blank" class="slide">
+              <img src="Images\LezhinComicsLogo.webp" alt="Lezhin Comics logo">
+            </a>
 
-          <div class="d-flex flex-wrap gap-2">
+            <a href="https://m.happymh.com/" target="_blank" class="slide">
+              <img src="Images\HappyMHLogo.jpeg" alt="Happy Manhua Logo">
+            </a>
+
+            <a href="https://mangadex.org/" target="_blank" class="slide">
+              <img src="Images\MangaDexLogo.png" alt="MangaDex Logo">
+            </a>
+
+            <a href="https://manga.bilibili.com/" target="_blank" class="slide">
+              <img src="Images\bilibiliLogo.webp" alt="Bilibili Comics logo">
+            </a>
+          </div>
+      </div>
+  </div>
+
+
+  <br>
+  <div class="card-body">
+        <h2>Comic Recommendations</h2>
+        <p>Tell us some of your reccomendations!</p>
+        <hr>
+
+        <form id="comicForm" action="formpage.html" method="GET">
+          <!-- Book Title -->
+          <div class="mb-3">
+            <label for="bookTitle" class="form-label" >Book Title</label>
+            <input type="text" class="form-control"id="bookTitle" placeholder="Enter comic title" name="bookTitle" required>
+          </div>
+
+          <!-- Genre Tags -->
+          <div class="mb-3">
+            <label class="form-label d-block">Genres</label>
+
+            <div class="d-flex flex-wrap gap-2">
+              
+              <input type="checkbox" class="btn-check" id="action" name="genres" value="action">
+              <label class="btn btn-outline-primary" for="action">Action</label>
             
-             <input type="checkbox" class="btn-check" id="action" name="genres" value="action">
-            <label class="btn btn-outline-primary" for="action">Action</label>
-          
-            <input type="checkbox" class="btn-check" id="adventure" name="genres" value="adventure" autocomplete="off">
-            <label class="btn btn-outline-primary" for="adventure">Adventure</label>
+              <input type="checkbox" class="btn-check" id="adventure" name="genres" value="adventure" autocomplete="off">
+              <label class="btn btn-outline-primary" for="adventure">Adventure</label>
 
-            <input type="checkbox" class="btn-check" id="comedy" name="genres" value="comedy" autocomplete="off">
-            <label class="btn btn-outline-primary" for="comedy">Comedy</label>
+              <input type="checkbox" class="btn-check" id="comedy" name="genres" value="comedy" autocomplete="off">
+              <label class="btn btn-outline-primary" for="comedy">Comedy</label>
 
-            <input type="checkbox" class="btn-check" id="drama" name="genres" value="drama" autocomplete="off">
-            <label class="btn btn-outline-primary" for="drama"> Drama </label>
+              <input type="checkbox" class="btn-check" id="drama" name="genres" value="drama" autocomplete="off">
+              <label class="btn btn-outline-primary" for="drama"> Drama </label>
 
-            <input type="checkbox"class="btn-check"id="fantasy"name="genres"value="fantasy" autocomplete="off">
-            <label class="btn btn-outline-primary" for="fantasy">Fantasy</label>
+              <input type="checkbox"class="btn-check"id="fantasy"name="genres"value="fantasy" autocomplete="off">
+              <label class="btn btn-outline-primary" for="fantasy">Fantasy</label>
+              
+              <input type="checkbox" class="btn-check" id="horror" name="genres" value="horror" autocomplete="off">
+              <label class="btn btn-outline-primary" for="horror">Horror</label>
             
-            <input type="checkbox" class="btn-check" id="horror" name="genres" value="horror" autocomplete="off">
-            <label class="btn btn-outline-primary" for="horror">Horror</label>
-          
 
-            <input type="checkbox" class="btn-check" id="mystery" name="genres" value="mystery" autocomplete="off">
-            <label class="btn btn-outline-primary" for="mystery">Mystery</label>
+              <input type="checkbox" class="btn-check" id="mystery" name="genres" value="mystery" autocomplete="off">
+              <label class="btn btn-outline-primary" for="mystery">Mystery</label>
 
-            <input type="checkbox" class="btn-check" id="romance" name="genres" value="romance" autocomplete="off">
-            <label class="btn btn-outline-primary" for="romance">Romance</label>
+              <input type="checkbox" class="btn-check" id="romance" name="genres" value="romance" autocomplete="off">
+              <label class="btn btn-outline-primary" for="romance">Romance</label>
 
-            <input type="checkbox" class="btn-check" id="sliceOfLife" name="genres" value="sliceOfLife" autocomplete="off">
-            <label class="btn btn-outline-primary" for="sliceOfLife">Slice of Life</label>
+              <input type="checkbox" class="btn-check" id="sliceOfLife" name="genres" value="sliceOfLife" autocomplete="off">
+              <label class="btn btn-outline-primary" for="sliceOfLife">Slice of Life</label>
 
-            <input type="checkbox" class="btn-check" id="others" name="genres" value="others" autocomplete="off">
-            <label class="btn btn-outline-primary" for="others">Others</label>
+              <input type="checkbox" class="btn-check" id="others" name="genres" value="others" autocomplete="off">
+              <label class="btn btn-outline-primary" for="others">Others</label>
+
+            </div>
+            <p>Select one or more genres.</p>
 
           </div>
-          <p>Select one or more genres.</p>
 
-        </div>
+          <!-- Rating -->
+          <div class="mb-3">
+            <label class="form-label d-block">Rating out of 5</label>
 
-        <!-- Rating -->
-        <div class="mb-3">
-          <label class="form-label d-block">Rating out of 5</label>
+            <div class="rating">
+              <input type="radio" class="btn-check"name="rating" id="rating1"value="1" autocomplete="off" required>
+              <label class="btn btn-outline-warning" for="rating1">1 ★</label>
 
-          <div class="rating">
-            <input type="radio" class="btn-check"name="rating" id="rating1"value="1" autocomplete="off" required>
-            <label class="btn btn-outline-warning" for="rating1">1 ★</label>
+              <input type="radio" class="btn-check" name="rating" id="rating2" value="2" autocomplete="off">
+              <label class="btn btn-outline-warning" for="rating2">2 ★</label>
 
-            <input type="radio" class="btn-check" name="rating" id="rating2" value="2" autocomplete="off">
-            <label class="btn btn-outline-warning" for="rating2">2 ★</label>
+              <input type="radio" class="btn-check" name="rating" id="rating3" value="3" autocomplete="off" >
+              <label class="btn btn-outline-warning" for="rating3">3 ★</label>
 
-            <input type="radio" class="btn-check" name="rating" id="rating3" value="3" autocomplete="off" >
-            <label class="btn btn-outline-warning" for="rating3">3 ★</label>
+              <input type="radio" class="btn-check" name="rating" id="rating4"value="4"autocomplete="off">
+              <label class="btn btn-outline-warning" for="rating4">4 ★</label>
 
-            <input type="radio" class="btn-check" name="rating" id="rating4"value="4"autocomplete="off">
-            <label class="btn btn-outline-warning" for="rating4">4 ★</label>
-
-            <input type="radio" class="btn-check" name="rating" id="rating5" value="5" autocomplete="off">
-            <label class="btn btn-outline-warning" for="rating5">5 ★</label>
-          </div>
-        </div>
-
-        <!-- Chapter Inputs -->
-        <div class="row g-3 mb-3">
-          <div class="col-md-6">
-            <label for="totalChapters" class="form-label" >
-              Total Chapters
-            </label>
-            <input
-              name="totalChapters"
-              type="number"
-              class="form-control"
-              id="totalChapters"
-              min="0"
-              placeholder="Enter total chapters"
-              required
-            >
+              <input type="radio" class="btn-check" name="rating" id="rating5" value="5" autocomplete="off">
+              <label class="btn btn-outline-warning" for="rating5">5 ★</label>
+            </div>
           </div>
 
-          <div class="col-md-6">
-            <label for="chaptersRead" class="form-label" >
-              Chapters Read
-            </label>
-            <input
-              name="chaptersRead"
-              type="number"
-              class="form-control"
-              id="chaptersRead"
-              min="0"
-              placeholder="Enter chapters read"
-              required
-            >
+          <!-- Chapter Inputs -->
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="totalChapters" class="form-label">Total Chapters</label>
+              <input name="totalChapters" type="number" class="form-control" id="totalChapters" min="0" placeholder="Enter total chapters" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="chaptersRead" class="form-label" >Chapters Read</label>
+              <input name="chaptersRead" type="number"class="form-control" id="chaptersRead" min="0" placeholder="Enter chapters read" required>
+            </div>
           </div>
-        </div>
 
-        <!-- Synopsis -->
-        <div class="mb-4">
-          <label for="synopsis" class="form-label">Synopsis</label>
-          <textarea
-          name="synopsis"
-            class="form-control"
-            id="synopsis"
-            rows="5"
-            placeholder="Enter a short synopsis"
-            required
-          ></textarea>
-        </div>
-
+          <!-- Synopsis -->
           <div class="mb-4">
-          <label for="Review" class="form-label">Review</label>
-          <textarea name="review" class="form-control" id="Review" rows="5" placeholder="Enter your review"required></textarea>
+            <label for="synopsis" class="form-label">Synopsis</label>
+            <textarea name="synopsis" class="form-control" id="synopsis" rows="5" placeholder="Enter a short synopsis" required>
+            </textarea>
+          </div>
 
-        </div>
+            <div class="mb-4">
+            <label for="Review" class="form-label">Review</label>
+            <textarea name="review" class="form-control" id="Review" rows="5" placeholder="Enter your review"required></textarea>
 
-        <!-- Buttons -->
-        <div class="d-flex gap-2">
-          <button type="submit" class="btn btn-success">Add Recommendation </button>
-          <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
-        </div>
-        
-      </form>
-  </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-success">Add Recommendation </button>
+            <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+          </div>
+          
+        </form>
+    </div>
 
 

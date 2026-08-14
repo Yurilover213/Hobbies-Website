@@ -69,6 +69,7 @@ h2{
 
 }
 
+/*Border color changes during hover*/
 .search:hover{
     border: 2px solid transparent;
     background:
@@ -89,7 +90,14 @@ h2{
 
 }
 
-/*Book*/
+/*Archive section layout*/
+
+.archive-section{
+    overflow: auto;
+    height: 600px
+}
+
+/*Book formatting*/
 
 .books{
     border:1px solid brown;
@@ -186,12 +194,7 @@ h2{
     margin-bottom:0px
 }
 
-/*Archive section layout*/
 
-.archive-section{
-    overflow: auto;
-    height: 600px
-}
 
 
 
